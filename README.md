@@ -95,7 +95,7 @@ drive.mount('/content/drive')
 **3️⃣ Run Scripts
 **For Task A:
 ```bash
-python juclassifydiff.py
+python Gender_classification.ipynb
 ```
 **For Task B:
 ```bash
