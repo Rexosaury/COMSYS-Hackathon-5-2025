@@ -23,12 +23,12 @@
 
 
 - **├── Task_A/**
-- **│ ├── Gender_classfication.ipynb/**         &emsp; &emsp; `# Full Colab pipeline for Task A`
-- **│ ├── gender_classifier.keras/**           &emsp; &emsp; &emsp; &ensp;`# ✅ Saved MobileNetV2 gender classifier`
+- **│ ├── Gender_classfication.ipynb/**         &emsp; &emsp; &emsp; &ensp; &nbsp;`# Full Colab pipeline for Task A`
+- **│ ├── gender_classifier.keras/**           &emsp; &emsp; &emsp; &emsp; &emsp; &ensp;`# ✅ Saved MobileNetV2 gender classifier`
 - **├── Task_B/**
-- **│ ├── Face_recognition.ipynb/**             &emsp; &emsp; &ensp; &ensp;`# Full Colab pipeline for Task B`
-- **│ ├── face_embeddings.npy/**                &emsp; &emsp; &emsp; &ensp;`# ✅ Saved face embeddings database`
-- **│ ├── face_labels.npy/**                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;`# ✅ Identity labels for embeddings`
+- **│ ├── Face_recognition.ipynb/**             &emsp; &emsp; &emsp; &emsp; &ensp; &ensp;`# Full Colab pipeline for Task B`
+- **│ ├── face_embeddings.npy/**                &emsp; &emsp; &emsp; &emsp; &emsp; &ensp;`# ✅ Saved face embeddings database`
+- **│ ├── face_labels.npy/**                     &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;`# ✅ Identity labels for embeddings`
 - **├── docs/**
 - **│ ├── Model_Architecture(Task_A).png/**
 - **│ ├── Model_Architecture(Task_B).png/**
