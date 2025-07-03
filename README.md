@@ -4,6 +4,7 @@
 
 - ✅ **Task A:** Gender Classification using MobileNetV2
 - ✅ **Task B:** Robust Face Recognition using InsightFace ArcFace Embeddings + SVM
+- ✅ **Dataset:** FACECOM (faces under adverse conditions)
 
 ---
 
@@ -21,15 +22,21 @@
 
 - **├── Task_A/**
 - **│ ├── juclassifydiff.py/** 
-- **│ ├── /train/**
-- **│ ├── /val/**
 - **├── Task_B/**
 - **│ ├── Task_B_InsightFace.ipynb/**
-- **│ ├── /train/**
-- **│ ├── /val/**
 
 	
 ---
+
+## 📄 Documentation
+
+* 📌 **Architecture Diagram:** [`docs/Model_Architecture(Task_A).jpeg`](docs/Model_Architecture(Task_A).jpeg) 
+[`docs/Model_Architecture(Task_B).jpeg`](docs/Model_Architecture(Task_B).jpeg) 
+
+* 📌 **Technical Summary:** [`docs/Technical_summary.pdf`](docs/Technical_summary.pdf)
+
+---
+
 
 ## ✅ Task A: Gender Classification
 
