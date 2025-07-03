@@ -16,14 +16,51 @@
 - Visualizes results: accuracy, confusion matrix, per-class precision & recall.
 
 ---
+**We provide pretrained model weights and saved embeddings so that you can reuse our pipelines without retraining from scratch.**
+**Below is the structure of the saved models for each task:**
 
 ## 🗂️ Repository Structure
 
 
 - **├── Task_A/**
-- **│ ├── Gender_classfication.py/** 
+- **│ ├── Gender_classfication.ipynb/**         &emsp; &emsp; `# Full Colab pipeline for Task A`
+- **│ ├── gender_classifier.keras/**           &emsp; &emsp; &emsp; &ensp;`# ✅ Saved MobileNetV2 gender classifier`
 - **├── Task_B/**
-- **│ ├── Task_B_InsightFace.ipynb/**
+- **│ ├── Face_recognition.ipynb/**             &emsp; &emsp; &ensp; &ensp;`# Full Colab pipeline for Task B`
+- **│ ├── face_embeddings.npy/**                &emsp; &emsp; &emsp; &ensp;`# ✅ Saved face embeddings database`
+- **│ ├── face_labels.npy/**                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;`# ✅ Identity labels for embeddings`
+- **├── docs/**
+- **│ ├── Model_Architecture(Task_A).png/**
+- **│ ├── Model_Architecture(Task_B).png/**
+- **│ ├── Technical_summary.pdf/**
+
+---
+## 🟢 How to Use the Saved Models
+
+* 📌 **Task A:**
+ *  **Load gender_classifier.keras directly in your Colab or local Python script:**
+ ```bash
+
+from tensorflow.keras.models import load_model
+model = load_model('Task_A/gender_classifier.keras')
+
+```
+*  **Use the model to predict gender on new images instantly no retraining required.**
+
+* 📌 **Task B:**
+ *  **Load the face embeddings, labels:**
+ ```bash
+import joblib
+import numpy as np
+
+embeddings = np.load('Task_B/face_embeddings.npy')
+labels = np.load('Task_B/face_labels.npy')
+
+```
+*⚡️ **Why Save These?**
+- **✅ Avoid redundant training time — just plug & play.**
+- **✅ Ensures reproducibility for judges & collaborators.**
+- **✅ Lets you easily test new faces or extend the pipeline.**
 
 	
 ---
@@ -76,7 +113,6 @@
 5. Predict on `val/` images.
 6. Visualize predictions with confidence score.
 
-**Expected Accuracy:** ~85–95% if good frontal images are used.
 
 ---
 
@@ -99,7 +135,7 @@ python Gender_classification.ipynb
 ```
 **For Task B:
 ```bash
-Open Task_B_InsightFace.ipynb in Colab → Run all cells.
+Open Face_recognition.ipynb in Colab → Run all cells.
 ```
 
 **📈 Results 
@@ -107,8 +143,8 @@ Open Task_B_InsightFace.ipynb in Colab → Run all cells.
 | Task                     |  Accuracy  | Precision | Recall | F1-Score |
 | ------------------------ | :--------: | :-------: | :----: | :------: |
 | Gender Classification    |   0.91     |   0.91    | 0.91   |  0.91    |
-| Face Recognition         |   0.0000   |   0.0000  | 0.0000 |  0.0000  |
-| **Final Weighted Score** | **0.0000** |     —     |    —   |     —    |
+| Face Recognition         |   0.97     |   0.98    | 0.97   |  0.97    |
+| **Final Weighted Score** | **0.94** |     —     |    —   |     —    |
 
 ----
 ## 👥 Team
