@@ -21,7 +21,7 @@
 
 
 - **├── Task_A/**
-- **│ ├── juclassifydiff.py/** 
+- **│ ├── Gender_classfication.py/** 
 - **├── Task_B/**
 - **│ ├── Task_B_InsightFace.ipynb/**
 
