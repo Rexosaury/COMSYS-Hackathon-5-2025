@@ -110,6 +110,22 @@ Open Task_B_InsightFace.ipynb in Colab → Run all cells.
 | Face Recognition         |   0.0000   |   0.0000  | 0.0000 |  0.0000  |
 | **Final Weighted Score** | **0.0000** |     —     |    —   |     —    |
 
+----
+## 👥 Team
+
+* **Team Leader:** Sobhan Roy
+* **Team Members:** Annick Das, Suchismita Bakshi
+* **Affiliation:** Techno International Newtown
+* **Contact:** [roysobhan.sr@gmail.com](mailto:roysobhan.sr@gmail.com)
+
+-----
+## 📜 License
+
+This project was created for COMSYS Hackathon-5 2025 and is solely intended for educational and research purposes.
+
+---
+
+```
 
 
 
